@@ -1,0 +1,150 @@
+4-16-20:
+
+/home/daniel/Data/vjosh90.py
+
+ },
+    {
+      "text": "AN",
+      "confidence": 1,
+      "timestamp": 1290,
+      "length": "PT0.09S"
+    },
+    {
+      "text": "AUTOMATED",
+      "confidence": 1,
+      "timestamp": 1380,
+      "length": "PT0.48S"
+    }
+  ],
+  "silenceDuration": 76.86
+}
+failed to call data: 502 Server Error: Bad Gateway for url: https://api.voxjar.com:9000/graphql
+pausing 2 secs
+retrying
+failed to call data: 502 Server Error: Bad Gateway for url: https://api.voxjar.com:9000/graphql
+pausing 2 secs
+retrying
+failed to call data: 502 Server Error: Bad Gateway for url: https://api.voxjar.com:9000/graphql
+pausing 2 secs
+retrying
+failed to call data: 502 Server Error: Bad Gateway for url: https://api.voxjar.com:9000/graphql
+Traceback (most recent call last):
+  File "vjosh90.py", line 422, in <module>
+    main()
+  File "vjosh90.py", line 415, in main
+    response =run(login_token, client, search_list)
+  File "vjosh90.py", line 382, in run
+    build_search_dict(saved_searches, login_token, client, search_responses, searches_outcomes, search_list)
+  File "vjosh90.py", line 353, in build_search_dict
+    successful=response.get('calls',{}).get('successful')
+AttributeError: 'bool' object has no attribute 'get'
+Bushido Data # ^C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Test works - Produced the 2.6 and 6gig filestheme
+
+  search_list=[
+    "Medicare Card",
+    "Primary Care Physician",
+    "Last time hospitalized",
+    "Value statements used",
+    "Price mentioned"
+  ]
+
+
+
+David Order 
+
+had 3 medicare card searches?
+
+does not work, pretty sure it's the - in the naming convention. 
+
+Tested in same exact py file: 
+
+"Call Opening",
+    works
+exp-call opening"
+    502 error
+
+search_list=[
+   "exp call opening",
+   "exp coronavirus",
+   "exp primary care physician",
+   "exp last time hospitalized",
+   "exp medicare card",
+   "exp reach after hours",
+   "exp How far do you have to travel to doctors office",
+   "exp forbidden phrases",
+   "exp how do you get to your appointments"
+  #,"exp answering machines"
+  ]
+
+
+Dan Decision for Kush-Dave?
+
+ search_list=[
+   "Call Opening",
+   "Coronavirus",
+   "primary Care Physician",
+   "last time hospitalized",
+   "Medicare Card",
+   "Reach After Hours",
+   "How far do you have to travel to doctors office",
+   "Forbidden Phrases",
+   "How do you get to your appointments",
+   "answering machines"
+  ]
+
+
+Checked for matches (dashboard elements?)
+duplicated some searches in voxjar.
+
+Other thouhgts:
+Dude your caps
+naming things 10 words (Verbose for charting?)
+
+
+502 error happend with: 
+
+   "answering machines" - 502
+   Search term had  Answering *Machine 
+   still 502 
+
+
+
+https://www.reddit.com/r/trippinthroughtime/comments/g25ez0/5g/?utm_source=share&utm_medium=web2x
+
+Dave new Order
+
+search_list=[
+ "exp answering machines",
+ "exp call opening",
+ "exp coronavirus",
+ "exp forbidden phrases",
+ "exp hard time getting prescriptions",
+ "exp how do you get to your appointments",
+ "exp how far do you have to travel to doctors office",
+ "exp last time hospitalized", 
+ "exp medicare card", "exp not interest",
+ "exp primary care physician",
+ "exp reach after hours",
+ "exp what is important when looking for a doctor"
+  ] 
+
